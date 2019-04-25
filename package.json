@@ -1,13 +1,13 @@
 {
-  "name": "max-vue-datepicker",
-  "version": "0.1.2",
+  "name": "max-vue-date-time-picker",
+  "version": "1.0.1",
   "types": "./dist/index.d.ts",
-  "main": "./dist/max-vue-datepicker.umd.min.js",
+  "main": "./dist/max-vue-date-time-picker.umd.min.js",
   "files": [
     "dist/*"
   ],
   "scripts": {
-    "build": "vue-cli-service build --target lib --name max-vue-datepicker ./src/index.ts",
+    "build": "vue-cli-service build --target lib --name max-vue-date-time-picker ./src/index.ts",
     "package": "yarn version --patch && yarn build && tsc --emitDeclarationOnly && git push origin master",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
