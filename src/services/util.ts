@@ -1,8 +1,8 @@
 import {DateTime, Info, Settings} from 'luxon';
 import {getWeekStartByLocale} from 'weekstart';
 import {FlowManager} from './FlowManager';
-import { DateTimePickerType } from '@/types/datepicker-type.enum';
-import { DateTimePickerSteps } from '@/types/datepicker-steps.enum';
+import { DateTimePickerType } from '../types/datepicker-type.enum';
+import { DateTimePickerSteps } from '../types/datepicker-steps.enum';
 
 export function capitalize(str: string): string {
   return `${str.charAt(0).toUpperCase()}${str.slice(1)}`;

@@ -1,4 +1,4 @@
-import {DateTimePickerSteps} from '@/types/datepicker-steps.enum';
+import {DateTimePickerSteps} from '../types/datepicker-steps.enum';
 
 export class FlowManager {
   private diversionNext: DateTimePickerSteps | null = null;
