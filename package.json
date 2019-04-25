@@ -1,6 +1,6 @@
 {
   "name": "max-vue-date-time-picker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "types": "./dist/index.d.ts",
   "main": "./dist/max-vue-date-time-picker.umd.min.js",
   "files": [
