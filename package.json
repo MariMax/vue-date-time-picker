@@ -1,6 +1,6 @@
 {
   "name": "max-vue-datepicker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "types": "./dist/index.d.ts",
   "main": "./dist/max-vue-datepicker.umd.min.js",
   "files": [
