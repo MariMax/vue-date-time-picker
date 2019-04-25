@@ -1,0 +1,85 @@
+{
+  "name": "max-vue-datepicker",
+  "version": "0.1.0",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/max-vue-datepicker.umd.min.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name max-vue-datepicker ./src/index.ts",
+    "package": "yarn version --patch && yarn build && tsc --emitDeclarationOnly && git push origin master",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@storybook/addon-actions": "^5.0.3",
+    "@storybook/addon-links": "^5.0.3",
+    "@storybook/addons": "^5.0.3",
+    "@storybook/cli": "^5.0.3",
+    "@storybook/vue": "^5.0.3",
+    "@types/jest": "^24.0.11",
+    "@vue/cli-plugin-typescript": "^3.3.0",
+    "@vue/cli-plugin-unit-jest": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-loader": "^8.0.5",
+    "babel-preset-vue": "^2.0.2",
+    "fork-ts-checker-webpack-plugin": "^1.0.0",
+    "node-sass": "^4.9.0",
+    "postcss-nested": "^4.1.0",
+    "sass-loader": "^7.0.1",
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.0.0",
+    "vue": "^2.5.21",
+    "vue-class-component": "^7.0.1",
+    "vue-property-decorator": "^8.0.0",
+    "vue-template-compiler": "^2.5.21",
+    "@types/luxon": "^1.12.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {},
+      "postcss-nested": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "vue",
+      "ts",
+      "tsx"
+    ],
+    "transform": {
+      "^.+\\.vue$": "vue-jest",
+      ".+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
+    "testMatch": [
+      "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
+    ],
+    "testURL": "http://localhost/"
+  },
+  "dependencies": {
+    "luxon": "^1.12.1",
+    "weekstart": "^1.0.0"
+  }
+}
