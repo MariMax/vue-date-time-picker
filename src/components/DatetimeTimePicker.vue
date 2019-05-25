@@ -383,7 +383,7 @@ export default class TimePicker extends Vue {
 }
 
 .vdatetime-time-picker__list {
-  height: 60px;
+  max-height: 60px;
   overflow-y: scroll;
   flex: 1;
 
